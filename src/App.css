@@ -1,19 +1,17 @@
-.App {
-  text-align: center;
+*{
+  margin:0;
+  padding:0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input, button, submit {
+  border:none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App{
+  text-align:center;
 }
 
-.App-header {
+.App-content {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -22,17 +20,62 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  padding:20px;
 }
 
-.App-link {
-  color: #61dafb;
+.gifs-container{
+ max-width: 1400px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+input{
+  padding: 5px;
+  border-radius: 0px 15px 15px 0px;
+  outline:none;
+}
+
+
+.popular{
+  text-align:center;
+}
+
+li{
+  list-style: none;
+  display: inline-block;
+  margin-right: 5px;
+  padding:5px;
+}
+
+a{
+  text-decoration:none;
+}
+
+ ul{
+   padding:0;
+ }
+ 
+ .logo{
+   margin-bottom:30px;
+ }
+
+.searchBar{
+  display: flex;
+  align-items: space-around;
+  justify-content: center;
+  margin-bottom:30px;
+}
+
+button{
+  height:100%;
+  background-image: linear-gradient(to bottom, #28a185 75%, #282c34);
+  border-radius: 15px 0px 0px 15px;
+  color:white;
+  padding: 0px 5px;
+  width:60px;
+  
+}
+
+button:hover{
+  background-image: linear-gradient(to bottom, #1f856d 75%, #282c34);
+  transition: 0.3s all;
 }
