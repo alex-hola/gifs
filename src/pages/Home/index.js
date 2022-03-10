@@ -1,4 +1,4 @@
-import { Link, useHistory } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import useTrendingGifs from '../../hooks/useTrendingGifs';
 import ListOfGifs from '../../components/ListOfGifs';
@@ -8,7 +8,7 @@ const Home = () => {
     const GIFS = ["LOTR", "Pandas", "League of legends", "Star wars", "Lions"];
 
     const [keyword, setKeyword] = useState("");
-    const history = useHistory();
+    const history = useNavigate();
 
     const gifs = useTrendingGifs();
 
